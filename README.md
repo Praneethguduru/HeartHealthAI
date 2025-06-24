@@ -51,25 +51,6 @@ heart-health-prediction/
 
 ---
 
-## ⚡ Quick Start
-
-### Backend (Gradio App)
-
-```bash
-cd app
-pip install -r requirements.txt
-python app.py
-```
-
-### Frontend (Optional - Angular)
-
-```bash
-cd frontend
-npm install
-ng serve
-```
-
----
 
 ## 📊 Dataset
 
@@ -105,5 +86,5 @@ Contributions are welcome! Feel free to open issues or pull requests.
 For any queries, reach out to me:
 
 **Guduru Praneeth**  
-Email: *[Your Email Here]*  
-LinkedIn: *[Your LinkedIn Here]*  
+Email: praneeth200410@gmail.com
+
