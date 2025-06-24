@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Heart Health AI</h2>
+        <form action="{{ url_for('predict') }}" method="post">
+            <label for="male">Gender ('0'for female or '1' for male):</label>
+            <input type="number" step="any" name="male" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" step="any" name="age" required><br><br>
+
+            <label for="currentSmoker">Current Smoker (0 or 1):</label>
+            <input type="number" step="any" name="currentSmoker" required><br><br>
+
+            <label for="cigsPerDay">Cigs Per Day('0' if not Smoker):</label>
+            <input type="number" step="any" name="cigsPerDay" required><br><br>
+
+            <label for="BPMeds">BP Meds ('0' for no medication or '1' for none):</label>
+            <input type="number" step="any" name="BPMeds" required><br><br>
+
+            <label for="prevalentStroke">Previous Stroke ('1' for strokes or '0' for none):</label>
+            <input type="number" step="any" name="prevalentStroke" required><br><br>
+
+            <label for="prevalentHyp">Hypertension (0 or 1):</label>
+            <input type="number" step="any" name="prevalentHyp" required><br><br>
+
+            <label for="diabetes">Diabetes (0 or 1):</label>
+            <input type="number" step="any" name="diabetes" required><br><br>
+
+            <label for="totChol">Total Cholesterol:</label>
+            <input type="number" step="any" name="totChol" required><br><br>
+
+            <label for="sysBP">Systolic BP:</label>
+            <input type="number" step="any" name="sysBP" required><br><br>
+
+            <label for="diaBP">Diastolic BP:</label>
+            <input type="number" step="any" name="diaBP" required><br><br>
+
+            <label for="BMI">BMI:</label>
+            <input type="number" step="any" name="BMI" required><br><br>
+
+            <label for="heartRate">Heart Rate:</label>
+            <input type="number" step="any" name="heartRate" required><br><br>
+
+            <label for="glucose">Glucose:</label>
+            <input type="number" step="any" name="glucose" required><br><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
